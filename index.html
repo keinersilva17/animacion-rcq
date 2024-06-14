@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animacion RCQ</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.5/lottie.min.js"></script>
+</head>
+<body>
+    <div id="anim" style="width: 230px; height: 1010px;"></div>
+
+    <script>
+        var animation = lottie.loadAnimation({
+            container: document.getElementById('anim'), // ID del contenedor
+            renderer: 'svg', // 'svg', 'canvas' o 'html'
+            autoplay: true, // true para comenzar automáticamente
+            loop: true, // true para loop infinito
+            path: 'data.json' // Ruta correcta al archivo JSON
+        });
+    </script>
+</body>
+</html>
